@@ -10,7 +10,7 @@
             <p class="card-text"><strong>Price:</strong> ${{ product.price }}</p>
 
             <div class="d-flex justify-content-between">
-              <a class="btn btn-primary" [routerLink]="'/products/' + product.id">Details</a>
+              <a class="btn btn-primary" [routerLink]="'/products/' + product.id" [queryParams]="queryParamService.getGtmDebugParam()">Details</a>
               <button class="btn btn-success" (click)="addToCart(product)">Add to Cart</button>
             </div>
 

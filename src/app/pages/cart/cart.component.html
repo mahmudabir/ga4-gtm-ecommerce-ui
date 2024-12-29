@@ -22,9 +22,9 @@
 
     <div class="d-flex justify-content-end">
       <button class="btn btn-danger me-2" (click)="clearCart()">Clear Cart</button>
-      <button class="btn btn-success" [routerLink]="'/checkout'">Proceed to Checkout</button>
+      <button class="btn btn-success" [routerLink]="'/checkout'" [queryParams]="queryParamService.getGtmDebugParam()">Proceed to Checkout</button>
     </div>
   } @else {
-    <p>Your cart is empty. Go back to the <a [routerLink]="'/products'">products page</a> to add items.</p>
+    <p>Your cart is empty. Go back to the <a [routerLink]="'/products'" [queryParams]="queryParamService.getGtmDebugParam()">products page</a> to add items.</p>
   }
 </div>

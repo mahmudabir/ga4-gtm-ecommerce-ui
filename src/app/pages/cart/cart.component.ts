@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CartService} from '../../services/cart.service';
 import {NgOptimizedImage} from '@angular/common';
 import {RouterLink} from '@angular/router';
+import {QueryParamService} from '../../services/query-param-service.service';
 
 @Component({
   selector: 'app-cart',
@@ -14,7 +15,7 @@ import {RouterLink} from '@angular/router';
 export class CartComponent implements OnInit {
   cartItems: any[] = [];
 
-  constructor(private cartService: CartService) {
+  constructor(private cartService: CartService, public queryParamService: QueryParamService) {
 
   }
 

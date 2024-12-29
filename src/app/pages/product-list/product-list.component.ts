@@ -4,6 +4,7 @@ import {CartService} from '../../services/cart.service';
 import {NgOptimizedImage} from '@angular/common';
 import {RouterLink} from '@angular/router';
 import {DataLayerService} from '../../services/data-layer.service';
+import {QueryParamService} from '../../services/query-param-service.service';
 
 @Component({
   selector: 'app-product-list',
@@ -17,7 +18,8 @@ export class ProductListComponent implements OnInit {
   products = PRODUCTS;
 
   constructor(private cartService: CartService,
-              private dataLayerService: DataLayerService) {
+              private dataLayerService: DataLayerService,
+              public queryParamService: QueryParamService) {
   }
 
   ngOnInit(): void {

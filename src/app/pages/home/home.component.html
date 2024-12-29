@@ -1,5 +1,5 @@
 <div class="container text-center">
   <h1>Welcome to Our E-Commerce Website</h1>
   <p>Explore our wide range of products!</p>
-  <a class="btn btn-primary" [routerLink]="'/products'">Shop Now</a>
+  <a class="btn btn-primary" [routerLink]="'/products'" [queryParams]="queryParamService.getGtmDebugParam()">Shop Now</a>
 </div>
