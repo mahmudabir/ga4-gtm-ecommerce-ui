@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Your Cart</h1>
+
+  @if (cartItems.length > 0) {
+
+    @for (item of cartItems; track item.id) {
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [ngSrc]="item.imageUrl" width="262" height="175" class="img-fluid rounded-start" alt="{{ item.name }}">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <p class="card-text">{{ item.description }}</p>
+              <p class="card-text"><strong>Price:</strong> ${{ item.price }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+    <button class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
+    <button class="btn btn-danger" (click)="checkout()">Checkout</button>
+  } @else {
+    <p>Your cart is empty. Go back to the <a routerLink="/products">products page</a> to add items.</p>
+  }
+</div>
