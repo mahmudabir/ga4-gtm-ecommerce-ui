@@ -1,1 +1,105 @@
-/* You can add global styles to this file, and also import other style files */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+/* Dark Mode Header Styles */
+body.dark-mode .navbar {
+  background-color: #333333;
+  border-bottom: 1px solid #444444;
+}
+
+body.dark-mode .navbar .nav-link {
+  color: #ffffff;
+}
+
+body.dark-mode .navbar .nav-link:hover {
+  color: #bb86fc;
+}
+
+body.dark-mode .navbar-brand {
+  color: #ffffff;
+}
+
+/* Dark Mode Card Styles */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+body.dark-mode .card .card-title,
+body.dark-mode .card .card-text {
+  color: #ffffff;
+}
+
+/* Dark Mode Button Styles */
+body.dark-mode .btn {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #555555;
+  border-color: #666666;
+}
+
+
+/* General Button Styles in Dark Mode */
+body.dark-mode .btn-primary {
+  background-color: #007bff; /* Retain Bootstrap's primary color */
+  color: #ffffff;
+  border: 1px solid #0056b3;
+}
+
+body.dark-mode .btn-secondary {
+  background-color: #6c757d; /* Retain Bootstrap's secondary color */
+  color: #ffffff;
+  border: 1px solid #545b62;
+}
+
+body.dark-mode .btn-success {
+  background-color: #28a745; /* Retain Bootstrap's success color */
+  color: #ffffff;
+  border: 1px solid #1e7e34;
+}
+
+body.dark-mode .btn-danger {
+  background-color: #dc3545; /* Retain Bootstrap's danger color */
+  color: #ffffff;
+  border: 1px solid #b21f2d;
+}
+
+body.dark-mode .btn-warning {
+  background-color: #ffc107; /* Retain Bootstrap's warning color */
+  color: #212529;
+  border: 1px solid #e0a800;
+}
+
+body.dark-mode .btn-info {
+  background-color: #17a2b8; /* Retain Bootstrap's info color */
+  color: #ffffff;
+  border: 1px solid #117a8b;
+}
+
+body.dark-mode .btn-light {
+  background-color: #f8f9fa; /* Light button for contrast */
+  color: #212529;
+  border: 1px solid #dae0e5;
+}
+
+body.dark-mode .btn-dark {
+  background-color: #343a40; /* Retain Bootstrap's dark color */
+  color: #ffffff;
+  border: 1px solid #1d2124;
+}
+
+/* Add hover effects for better interactivity */
+body.dark-mode .btn:hover {
+  opacity: 0.9;
+}
