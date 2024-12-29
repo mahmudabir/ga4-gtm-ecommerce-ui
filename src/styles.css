@@ -1,3 +1,4 @@
+/* General Dark Mode Styles */
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
@@ -102,4 +103,122 @@ body.dark-mode .btn-dark {
 /* Add hover effects for better interactivity */
 body.dark-mode .btn:hover {
   opacity: 0.9;
+}
+
+
+/* Dark Mode Input Fields */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #bbbbbb;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  outline: none;
+  border-color: #bb86fc;
+  box-shadow: 0 0 0 0.2rem rgba(187, 134, 252, 0.25);
+}
+
+/* Dark Mode Labels */
+body.dark-mode label {
+  color: #ffffff;
+}
+
+/* Dark Mode Select Dropdown */
+body.dark-mode select {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+body.dark-mode select option {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Dark Mode Button Styling */
+body.dark-mode button {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+body.dark-mode button:hover {
+  background-color: #555555;
+  border-color: #666666;
+}
+
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="number"],
+body.dark-mode textarea{
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode input[type="checkbox"] {
+  accent-color: #bb86fc; /* Customize checkbox color */
+}
+
+
+/* Dark Mode Text Area Normal State */
+body.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444444;
+  caret-color: #ffffff; /* Ensures the caret (cursor) is visible */
+}
+
+/* Dark Mode Text Area Focused State */
+body.dark-mode textarea:focus {
+  background-color: #1e1e1e; /* Ensure it remains dark */
+  color: #ffffff; /* Ensure text remains white */
+  outline: none;
+  border-color: #bb86fc; /* Add a highlight color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(187, 134, 252, 0.25); /* Subtle glow effect */
+}
+
+body.dark-mode textarea {
+  caret-color: #bb86fc; /* Cursor matches the focus highlight */
+}
+
+/* Custom Scrollbar for Textarea in Dark Mode */
+body.dark-mode textarea::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+body.dark-mode textarea::-webkit-scrollbar-thumb {
+  background-color: #444444; /* Dark scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #333333; /* Optional: Add a border around the thumb */
+}
+
+body.dark-mode textarea::-webkit-scrollbar-track {
+  background-color: #2c2c2c; /* Dark background for the track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+body.dark-mode textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #bb86fc; /* Lighter color when the thumb is hovered */
+}
+
+/* Custom Resizer for Textarea in Dark Mode */
+body.dark-mode textarea::-webkit-resizer {
+  background-color: #444444; /* Set a dark color for the resizer */
+  border-radius: 4px; /* Optional: Round the resizer edges */
+}
+
+/* Optional: Change resizer color on hover */
+body.dark-mode textarea::-webkit-resizer:hover {
+  background-color: #bb86fc; /* Lighter color on hover */
 }
