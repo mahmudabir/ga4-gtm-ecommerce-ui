@@ -20,8 +20,10 @@
       </div>
     }
 
-    <button class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
-    <button class="btn btn-danger" (click)="checkout()">Checkout</button>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-danger me-2" (click)="clearCart()">Clear Cart</button>
+        <button class="btn btn-success" (click)="checkout()">Checkout</button>
+      </div>
   } @else {
     <p>Your cart is empty. Go back to the <a routerLink="/products">products page</a> to add items.</p>
   }
