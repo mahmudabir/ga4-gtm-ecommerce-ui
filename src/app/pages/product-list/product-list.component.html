@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row">
     @for (product of products; track product.id) {
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-3">
+        <div class="card mb-3">
           <div class="card-body">
-            <img [ngSrc]="product.imageUrl" height="175" width="262" alt="{{ product.name }}">
+            <img [ngSrc]="product.imageUrl" class="card-img" height="175" width="262" alt="{{ product.name }}">
             <h5 class="card-title">{{ product.name }}</h5>
             <p class="card-text">{{ product.description }}</p>
             <p class="card-text"><strong>Price:</strong> ${{ product.price }}</p>
