@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ThemeService {
-  private isDarkMode = false;
+  isDarkMode = true;
+  iconStrokeColor = "#000";
 
   constructor() {
     // Load the saved theme preference
@@ -19,6 +20,20 @@ export class ThemeService {
 
     // Save the current theme preference
     localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
+
+    this.iconStrokeColor = this.isDarkMode ? '#fff' : '#000';
+  }
+
+  setTheme(theme: string): void {
+
+    if (!localStorage.getItem('theme'))  {
+      const currentTheme =this.getCurrentTheme() ? 'dark' : 'light';
+
+      if (currentTheme != theme) {
+        this.toggleTheme();
+      }
+    }
+
   }
 
   getCurrentTheme(): boolean {

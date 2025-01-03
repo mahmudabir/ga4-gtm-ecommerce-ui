@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg shadow">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/" [queryParams]="queryParamService.getGtmDebugParam()">E-Commerce</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -6,11 +6,37 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link" routerLink="/" [queryParams]="queryParamService.getGtmDebugParam()">Home</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/products" [queryParams]="queryParamService.getGtmDebugParam()">Products</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/cart" [queryParams]="queryParamService.getGtmDebugParam()">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/" [queryParams]="queryParamService.getGtmDebugParam()">Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" routerLink="/products"
+                                [queryParams]="queryParamService.getGtmDebugParam()">Products</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/cart"
+                                [queryParams]="queryParamService.getGtmDebugParam()">Cart</a></li>
       </ul>
-      <button class="btn btn-outline-secondary" (click)="toggleTheme()">Toggle Dark Mode</button>
+      <button class="btn btn-outline-dark shadow" (click)="toggleTheme()">
+        @if (isDarkMode) {
+          <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+               aria-labelledby="nightModeIconTitle" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" fill="none" color="#FFFFFF"><title id="nightModeIconTitle">Night Mode</title>
+            <path d="M12 19a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/>
+            <path d="M15.899 12.899a4 4 0 0 1-4.797-4.797A4.002 4.002 0 0 0 12 16c1.9 0 3.49-1.325 3.899-3.101z"/>
+            <path d="M12 5V3M12 21v-2"/>
+            <path
+              d="M5 12H2h3zM22 12h-3 3zM16.95 7.05L19.07 4.93 16.95 7.05zM4.929 19.071L7.05 16.95 4.93 19.07zM16.95 16.95l2.121 2.121-2.121-2.121zM4.929 4.929L7.05 7.05 4.93 4.93z"/>
+          </svg>
+        } @else {
+          <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+               aria-labelledby="nightModeIconTitle" stroke="#000000" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" fill="none" color="#000000"><title id="nightModeIconTitle">Night Mode</title>
+            <path d="M12 19a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/>
+            <path d="M15.899 12.899a4 4 0 0 1-4.797-4.797A4.002 4.002 0 0 0 12 16c1.9 0 3.49-1.325 3.899-3.101z"/>
+            <path d="M12 5V3M12 21v-2"/>
+            <path
+              d="M5 12H2h3zM22 12h-3 3zM16.95 7.05L19.07 4.93 16.95 7.05zM4.929 19.071L7.05 16.95 4.93 19.07zM16.95 16.95l2.121 2.121-2.121-2.121zM4.929 4.929L7.05 7.05 4.93 4.93z"/>
+          </svg>
+        }
+
+      </button>
     </div>
   </div>
 </nav>
