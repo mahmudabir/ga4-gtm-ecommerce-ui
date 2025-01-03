@@ -10,7 +10,7 @@ export class QueryParamService {
     this.paramValue = value;
   }
 
-  getGtmDebugParam() {
-    return {"gtm_debug": this.paramValue};
+  getGtmDebugParam(): { [key: string]: string | null } {
+    return this.paramValue ? { "gtm_debug": this.paramValue } : {};
   }
 }
