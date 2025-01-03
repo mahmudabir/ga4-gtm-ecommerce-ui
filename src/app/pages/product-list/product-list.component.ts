@@ -20,14 +20,17 @@ export class ProductListComponent implements OnInit {
   constructor(private cartService: CartService,
               private dataLayerService: DataLayerService,
               public queryParamService: QueryParamService) {
-  }
 
-  ngOnInit(): void {
     this.dataLayerService.push({
       event: "product_list_page_view",
       page_url: "/products",
       products_count: `${this.products.length}`
     });
+    
+  }
+
+  ngOnInit(): void {
+
   }
 
   addToCart(product: any): void {
