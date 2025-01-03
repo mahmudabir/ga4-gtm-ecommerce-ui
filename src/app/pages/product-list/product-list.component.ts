@@ -26,7 +26,7 @@ export class ProductListComponent implements OnInit {
       page_url: "/products",
       products_count: `${this.products.length}`
     });
-    
+
   }
 
   ngOnInit(): void {
