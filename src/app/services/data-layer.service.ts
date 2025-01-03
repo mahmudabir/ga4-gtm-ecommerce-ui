@@ -1,5 +1,5 @@
-import {inject, Injectable, InjectionToken} from '@angular/core';
-import {DOCUMENT} from '@angular/common';
+import { inject, Injectable, InjectionToken } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 export const WINDOW = new InjectionToken<Window>('Global window object', {
   factory: (): Window => <Window>inject(DOCUMENT)?.defaultView

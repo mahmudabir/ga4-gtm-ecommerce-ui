@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {ActivatedRoute, RouterOutlet} from '@angular/router';
-import {HeaderComponent} from './components/header/header.component';
-import {QueryParamService} from './services/query-param-service.service';
+import { Component } from '@angular/core';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
+import { QueryParamService } from './services/query-param-service.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,8 @@ import {QueryParamService} from './services/query-param-service.service';
 export class AppComponent {
   title = 'ga4-gtm-ecommerce-ui';
 
-  constructor(private route: ActivatedRoute, private queryParamService: QueryParamService) {}
+  constructor(private route: ActivatedRoute, private queryParamService: QueryParamService) {
+  }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe((params) => {

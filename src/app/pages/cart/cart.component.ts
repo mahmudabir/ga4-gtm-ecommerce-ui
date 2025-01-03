@@ -1,8 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {CartService} from '../../services/cart.service';
-import {NgOptimizedImage} from '@angular/common';
-import {RouterLink} from '@angular/router';
-import {QueryParamService} from '../../services/query-param-service.service';
+import { Component, OnInit } from '@angular/core';
+import { CartService } from '../../services/cart.service';
+import { NgOptimizedImage } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { QueryParamService } from '../../services/query-param-service.service';
 
 @Component({
   selector: 'app-cart',

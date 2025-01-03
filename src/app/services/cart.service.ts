@@ -1,5 +1,5 @@
-import {Injectable} from '@angular/core';
-import {DataLayerService} from './data-layer.service';
+import { Injectable } from '@angular/core';
+import { DataLayerService } from './data-layer.service';
 
 @Injectable({
   providedIn: 'root',
@@ -7,7 +7,8 @@ import {DataLayerService} from './data-layer.service';
 export class CartService {
   private cart: any[] = [];
 
-  constructor(private dataLayerService: DataLayerService) {}
+  constructor(private dataLayerService: DataLayerService) {
+  }
 
   addToCart(product: any): void {
     this.cart.push(product);

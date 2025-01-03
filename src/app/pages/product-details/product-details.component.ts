@@ -1,8 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {PRODUCTS} from '../../data';
-import {CartService} from '../../services/cart.service';
-import {NgOptimizedImage} from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { PRODUCTS } from '../../data';
+import { CartService } from '../../services/cart.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-product-details',
@@ -14,7 +14,8 @@ import {NgOptimizedImage} from '@angular/common';
 export class ProductDetailsComponent implements OnInit {
   product: any;
 
-  constructor(private route: ActivatedRoute, private cartService: CartService) {}
+  constructor(private route: ActivatedRoute, private cartService: CartService) {
+  }
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));

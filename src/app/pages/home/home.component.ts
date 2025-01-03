@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {RouterLink} from '@angular/router';
-import {QueryParamService} from '../../services/query-param-service.service';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { QueryParamService } from '../../services/query-param-service.service';
 
 @Component({
   selector: 'app-home',

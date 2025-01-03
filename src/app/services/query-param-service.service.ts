@@ -11,6 +11,6 @@ export class QueryParamService {
   }
 
   getGtmDebugParam() {
-    return { "gtm_debug" : this.paramValue };
+    return {"gtm_debug": this.paramValue};
   }
 }

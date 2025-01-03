@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {Router} from '@angular/router';
-import {FormsModule} from '@angular/forms';
-import {CartService} from '../../services/cart.service';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-checkout',
@@ -24,7 +24,7 @@ export class CheckoutComponent {
   onSubmit(): void {
     alert(`Thank you for your order, ${this.checkoutData.name}!`);
     // Navigate to home or products page after confirmation
-    this.router.navigate(['/']).then(x=> this.checkout());
+    this.router.navigate(['/']).then(x => this.checkout());
   }
 
   checkout(): void {
