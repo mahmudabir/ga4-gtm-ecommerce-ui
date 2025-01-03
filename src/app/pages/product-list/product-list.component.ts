@@ -15,7 +15,7 @@ import { QueryParamService } from '../../services/query-param-service.service';
   ]
 })
 export class ProductListComponent implements OnInit {
-  products = PRODUCTS;
+  products: any = PRODUCTS;
 
   constructor(private cartService: CartService,
               private dataLayerService: DataLayerService,
