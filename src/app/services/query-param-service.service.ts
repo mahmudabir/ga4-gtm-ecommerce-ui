@@ -5,12 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class QueryParamService {
   private paramValue: string | null = null;
+  private paramKey: string = "gtm_debug";
 
   setGtmDebugParam(value: string | null): void {
     this.paramValue = value;
   }
 
   getGtmDebugParam(): { [key: string]: string | null } {
-    return this.paramValue ? { "gtm_debug": this.paramValue } : {};
+    const paramKey = this.paramKey;
+    return this.paramValue ? { paramKey : this.paramValue } : {};
   }
 }
