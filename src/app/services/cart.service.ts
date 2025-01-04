@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { DataLayerService } from './data-layer.service';
+import { DATA_LAYER_TIME } from '../data';
 
 @Injectable({
   providedIn: 'root',
@@ -14,13 +15,12 @@ export class CartService {
     this.cart.push(product);
 
     this.dataLayerService.push({
-      event: "product_added_to_cart",
-      page_url: `/products`,
-      product_page_url: `/products/${product.id}`,
+      event: "product_add_to_cart",
+      page_url: `/products/${product.id}`,
       product_id: `${product.id}`,
       product_name: product.name,
       product_price: product.price,
-      product: product,
+      product: product
     });
   }
 

@@ -24,9 +24,7 @@ export class ProductListComponent implements OnInit {
     this.dataLayerService.push({
       event: "product_list_page_view",
       page_url: "/products",
-      products_count: `${this.products.length}`,
-      visited_on: new Date().toLocaleDateString(),
-      visited_at: new Date().toLocaleTimeString()
+      products_count: `${this.products.length}`
     });
 
   }

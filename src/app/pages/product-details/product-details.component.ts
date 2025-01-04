@@ -19,7 +19,7 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.product = PRODUCTS.find((p) => p.id === id);
+    this.product = PRODUCTS.find(p => p.id === id);
   }
 
   addToCart(): void {

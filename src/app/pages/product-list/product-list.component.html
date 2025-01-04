@@ -11,7 +11,7 @@
 
             <div class="d-flex justify-content-between">
               <a class="btn btn-primary" [routerLink]="'/products/' + product.id" [queryParams]="queryParamService.getGtmDebugParam()">Details</a>
-              <button class="btn btn-success" (click)="addToCart(product)">Add to Cart</button>
+              <button id="add-to-cart" class="btn btn-success" (click)="addToCart(product)">Add to Cart</button>
             </div>
 
           </div>
