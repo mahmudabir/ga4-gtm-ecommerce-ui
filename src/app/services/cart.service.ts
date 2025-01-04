@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { DataLayerService } from './data-layer.service';
-import { DATA_LAYER_TIME } from '../data';
 
 @Injectable({
   providedIn: 'root',
